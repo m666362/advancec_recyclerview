@@ -14,24 +14,25 @@ import org.richit.advancedrecyclerview.R;
 
 import java.util.ArrayList;
 
-public class AppAdapter extends RecyclerView.Adapter<AppAdapter.ViewHolder> {
+public class RecommendedAppAdapter extends RecyclerView.Adapter<RecommendedAppAdapter.ViewHolder> {
+
     ArrayList<App> apps = new ArrayList<>();
     Context context;
 
-    public AppAdapter(ArrayList<App> apps, Context context) {
+    public RecommendedAppAdapter(ArrayList<App> apps, Context context) {
         this.apps = apps;
         this.context = context;
     }
 
     @NonNull
     @Override
-    public AppAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from( context ).inflate( R.layout.rec_for_u, parent, false );
+    public RecommendedAppAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from( context ).inflate( R.layout.recommended_for_u_rec_v, parent, false );
         return new ViewHolder( view );
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AppAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull RecommendedAppAdapter.ViewHolder holder, int position) {
         holder.titleTv.setText( apps.get( position ).getTitle() );
         holder.descriptionTv.setText( apps.get( position ).getDescription() );
     }

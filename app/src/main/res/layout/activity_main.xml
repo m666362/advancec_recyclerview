@@ -13,11 +13,11 @@
         android:id="@+id/mainLinearLayout"
         android:orientation="vertical">
 
-<!--        <androidx.recyclerview.widget.RecyclerView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_margin="8dp"-->
-<!--            android:id="@+id/recViewAge"/>-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:id="@+id/ageRV"/>
 
 <!--        <RelativeLayout-->
 <!--            android:layout_width="match_parent"-->
